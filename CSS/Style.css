@@ -401,3 +401,110 @@
 .item2:hover .overlay {
   opacity: 1;
 }
+.hover-zoom {
+    transition: transform 0.2s ease-in-out; 
+}
+
+
+.hover-zoom:hover {
+    transform: scale(1.1); 
+}
+.buyButton {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f7c52d; /* Amazon-like button color */
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease; /* Smooth animations */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    position: relative;
+    overflow: hidden; /* Clip any overflow for effects */
+    height: 35px;
+}
+
+.buyButton img {
+    height: 20px;
+    width: 20px;
+    transition: transform 0.4s ease; /* Smooth icon animation */
+}
+
+.buyButton:hover {
+    transform: scale(1.1) rotate(1deg); /* Slight rotation and zoom */
+    background-color: #e6b220; /* Darker shade on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+
+.buyButton:hover img {
+    transform: scale(1.2); /* Enlarge the icon slightly */
+}
+
+.buyButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Highlight effect */
+    transform: skewX(-30deg); /* Skewed highlight */
+    transition: left 0.6s ease; /* Smooth movement */
+}
+
+.buyButton:hover::before {
+    left: 100%; /* Move highlight across the button */
+}
+
+.buyButton:hover span {
+    color: #fff; /* Change text color on hover */
+}
+
+/* Certificate Card Styling */
+.Certificate-card {
+    /* height: 100%;
+    width: 100%; */
+    width: 420px;
+    height: 400px;
+    background: #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+    padding: 20px 0px;
+}
+
+.Certificate-card:hover {
+    border: 0.5px solid #ff8000;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.JournelIcon {
+    border: 1px solid #ff8000;
+    height: 60px;
+    width: 100px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JournelIcon img {
+    height: 45px;
+    width: 60px;
+    border-radius: 5px;
+}
+.floating-container {
+    background-color: #fff;
+    /* border: 1px solid #bfbfbf; */
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4), 0 6px 6px rgba(255, 255, 255, 0.3); */
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
