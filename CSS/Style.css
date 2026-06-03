@@ -508,3 +508,227 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+.Award-col {
+    min-height: 478px;
+}
+
+.Awards01Img {
+    height: 100px;
+    width: 250px;
+
+}
+
+.pats01Img {
+    height: 120px;
+    width: 120px;
+
+}
+
+.Certificate01Img {
+    height: 150px;
+    width: 150px;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Awards02Img {
+    height: 100px;
+    width: 100px;
+}
+.CertificateImg {
+    height: 500px;
+    width: 700px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Research Card Styling */
+.ResearchCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px 0px;
+}
+
+/* Certificate Card Styling */
+.Certificate-card {
+    /* height: 100%;
+    width: 100%; */
+    width: 420px;
+    height: 400px;
+    background: #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+    padding: 20px 0px;
+}
+
+.Certificate-card:hover {
+    border: 0.5px solid #ff8000;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Conference-card {
+    /* height: 100%;
+    width: 100%; */
+    width: 420px;
+    height: 450px;
+    background: #EEF9FF;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+    padding: 20px 0px;
+}
+
+.Conference-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Main Card Styling */
+.mainCard {
+    margin: auto;
+    background-color: #ffffff;
+    color: #000;
+    max-width: 441px;
+    width: 100%;
+    border: 1px solid #ddd;
+    min-height: 178px;
+}
+
+@media (max-width: 460px) {
+    .mainCard {
+        width: 90%;
+    }
+}
+.news-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff4400, #e38800);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.news-button:hover {
+    background: linear-gradient(to right, #e38800, #ff4400);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.recommendation-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    min-height: 230px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.designation {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0 0 0;
+}
+
+.reporting {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.recommendation-text {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .recommendation-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) { /* Large screens and up */
+    .col-lg-custom-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* Medium screens */
+    .col-lg-custom-5 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 767.98px) { /* Small screens */
+    .col-lg-custom-5 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 575.98px) { /* Extra small screens */
+    .col-lg-custom-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
